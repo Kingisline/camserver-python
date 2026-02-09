@@ -1,0 +1,28 @@
+<UI>:
+    orientation: "vertical"
+    padding: 20
+    spacing: 20
+
+    Label:
+        text: "Python Android Cam Server"
+        font_size: 24
+
+    Button:
+        text: "Start Server"
+        size_hint_y: None
+        height: 60
+        on_press: root.start_server()
+
+    Button:
+        text: "Stop Server"
+        size_hint_y: None
+        height: 60
+        on_press: root.stop_server()
+
+    Label:
+        id: status
+        text: "Server Stopped"
+
+    Label:
+        id: iplabel
+        text: ""
